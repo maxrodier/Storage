@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Spring Boot Thymeleaf Hello World Example</title>
+  		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+  		<link rel="stylesheet" type="text/css" href="/css/sidebar.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  	</head>
+	<body>
+	  	<div th:replace="fragments/header :: header"></div>
+  		<div class="container-fluid">
+   			<div class="row">
+		  		<nav th:replace="fragments/menu :: menu"></nav>
+		  		<div class="col-sm-8 offset-sm-4 col-md-9 offset-md-3 col-lg-10 offset-lg-2 pt-4">
+		  			<div>
+		  				<h2 th:text="${message}"></h2> 
+		  			</div>
+	  				<div th:replace="fragments/footer :: footer"></div>
+		  		</div>
+		  	</div>
+	  	</div>
+	</body>
+</html>

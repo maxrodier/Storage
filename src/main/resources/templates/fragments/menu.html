@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  	<body>
+		<nav th:fragment="menu" class="sidebar">
+        	<ul class="sidebar-nav">
+	          	<li th:classappend="${active == 'Overview' ? 'active':''}" class="sidebar-nav-item" onclick="location.href = '/';">
+	          		<div class="sidebar-nav-item-container">
+	          			<div class="sidebar-nav-item-icon">
+         					<i class="fas fa-bars sidebar-icons"></i>
+       					</div>	
+	          			<div class="sidebar-nav-item-text">
+	          				<p>Overview</p>
+	          			</div>
+	          		</div>
+	          	</li>
+	          	<li class="sidebar-nav-item">
+	          		<div class="sidebar-nav-item-container">
+	          			<div class="sidebar-nav-item-icon">
+         					<i class="fas fa-bars sidebar-icons"></i>
+       					</div>	
+	          			<div class="sidebar-nav-item-text">
+	          				<p>Overview</p>
+	          			</div>
+	          		</div>
+	          	</li>
+        	</ul>
+     	</nav>
+  	</body>
+</html>
+
